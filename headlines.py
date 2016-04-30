@@ -13,4 +13,4 @@ def get_news(publication="cnn"):
     return render_template('home.html', articles=articles)
 
 if __name__ == "__main__":
-    app.run(port=5001, debug=True)
+    app.run(port=80, debug=True)
