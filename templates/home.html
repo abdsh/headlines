@@ -1,10 +1,19 @@
 <html>
     <body>
         <h1>Headlines</h1>
+        <div>
+            <form>
+                <input type="text" name="publication" placeholder="search" />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
         {% for article in articles %}
-            <b><a href="{{article.link}}">{{article.title}}</a></b><br />
-            <i>{{article.published}}</i><br />
-            <p>{{article.summary|safe}}</p>
+            <div>
+                <b><a href="{{article.link}}">{{article.title}}</a></b><br />
+                <i>{{article.published}}</i><br />
+                <p>{{article.summary|safe}}</p>
+
+            </div>
         <hr />
         {% endfor %}
     </body>
