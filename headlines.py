@@ -72,4 +72,4 @@ def get_value_with_fallback(key):
         return request.cookies.get(key)
     return DEFAULTS[key]
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(port=80, debug=True)
